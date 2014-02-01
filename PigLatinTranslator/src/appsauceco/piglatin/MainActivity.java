@@ -1,4 +1,4 @@
-package renwick.play.piglatin;
+package appsauceco.piglatin;
 
 import android.app.Activity;
 import android.content.Intent;

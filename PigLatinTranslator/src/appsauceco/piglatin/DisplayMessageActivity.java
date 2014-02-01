@@ -1,4 +1,4 @@
-package renwick.play.piglatin;
+package appsauceco.piglatin;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
