@@ -12,4 +12,4 @@ Non used yet.
 
 ##Links:
 
-[Developer app store link](https://play.google.com/store/apps/developer?id=App+Sauce+Co)
+[Developer app store link](https://play.google.com/store/apps/developer?id=App+Sauce+Co.)
