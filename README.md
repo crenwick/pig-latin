@@ -1,19 +1,15 @@
-Drinking Time
+Pig Latin Translator
 ================
 
-An Android app drinking game for the TV show Adventure Time.
+An Android app to translate text into pig latin.
 
 ## Features
-* 11 rules
-* Custom tablet layout
-* link to the app store
-* Toast messages!
+* 2 activities to translate user text into pig latin
 
 ## Libraries
 
-Uses Google-Play-Services library for banner ads.
+Non used yet.
 
 ##Links:
-[App link](https://play.google.com/store/apps/details?id=appsauceco.drinkingtime)
 
 [Developer app store link](https://play.google.com/store/apps/developer?id=App+Sauce+Co)
