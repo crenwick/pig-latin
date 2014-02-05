@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/more_apps"
+        android:title="@string/more_apps"/>
+    <item
+        android:id="@+id/shareItem"
+        android:showAsAction="always"
+        android:title="@string/share"
+        android:icon="@drawable/share" />
+    
+</menu>
