@@ -1,26 +1,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="8dp" >
+    android:layout_height="match_parent" >
 
-    <EditText
-        android:id="@+id/edit_message"
+    <LinearLayout
+        android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/edit_message"
-        android:maxLines="5"
-        android:minLines="3"
-        android:padding="8dp" />
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_message"
-        android:onClick="sendMessage"
-        android:layout_centerInParent="true"
-        android:padding="8dp"
-        android:text="@string/button_send" />
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adView"
+        android:background="@drawable/background1" >
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:hint="@string/edit_message"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_message"
+            android:layout_centerInParent="true"
+            android:onClick="sendMessage"
+            android:padding="8dp"
+            android:text="@string/button_send"
+            android:typeface="monospace" />
+    </RelativeLayout>
 
 </RelativeLayout>
