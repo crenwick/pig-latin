@@ -47,12 +47,7 @@ public class DisplayMessageActivity extends Activity {
 
 	}
 
-	public void stamp(View ImageView) {
-		Intent i = new Intent(Intent.ACTION_SEND);
-		i.setType("text/plain");
-		i.putExtra(Intent.EXTRA_TEXT, stampMessage);
-		startActivity(i);
-	}
+	
 
 	/**
 	 * Method to translate the phrase word by word
@@ -130,7 +125,7 @@ public class DisplayMessageActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.main2, menu);
 		return true;
 	}
 
@@ -139,6 +134,9 @@ public class DisplayMessageActivity extends Activity {
 		switch (item.getItemId()) {
 		case R.id.more_apps:
 			appSauce(null);
+			return true;
+		case R.id.shareItem:
+			stamp(null);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
@@ -149,6 +147,13 @@ public class DisplayMessageActivity extends Activity {
 		String url = "https://play.google.com/store/apps/developer?id=App+Sauce+Co.";
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setData(Uri.parse(url));
+		startActivity(i);
+	}
+	
+	public void stamp(View ImageView) {
+		Intent i = new Intent(Intent.ACTION_SEND);
+		i.setType("text/plain");
+		i.putExtra(Intent.EXTRA_TEXT, stampMessage);
 		startActivity(i);
 	}
 

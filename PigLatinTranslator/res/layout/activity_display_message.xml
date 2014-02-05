@@ -32,18 +32,6 @@
                 android:textStyle="normal"
                 android:typeface="normal" />
         </ScrollView>
-
-        <ImageView
-            android:id="@+id/stamp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="32dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="90dp"
-            android:onClick="stamp"
-            android:src="@drawable/stamp" />
     </RelativeLayout>
 
 </RelativeLayout>

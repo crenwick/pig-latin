@@ -15,7 +15,7 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
-	private AdView adView;
+//	private AdView adView;
 
 	public final static String EXTRA_MESSAGE = "renwick.play.piglatin.MESSAGE";
 
@@ -25,14 +25,14 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		// adBanner
-		adView = new AdView(this);
-		adView.setAdUnitId("ca-app-pub-7649747947968832/5314094307");
-		adView.setAdSize(AdSize.SMART_BANNER);
-		LinearLayout layout = (LinearLayout) findViewById(R.id.adView);
-		layout.addView(adView);
-		AdRequest adRequest = new AdRequest.Builder().addTestDevice("6b0284de")
-				.addTestDevice("c0808a004e5b92f").build();
-		adView.loadAd(adRequest);
+//		adView = new AdView(this);
+//		adView.setAdUnitId("ca-app-pub-7649747947968832/5314094307");
+//		adView.setAdSize(AdSize.SMART_BANNER);
+//		LinearLayout layout = (LinearLayout) findViewById(R.id.adView);
+//		layout.addView(adView);
+//		AdRequest adRequest = new AdRequest.Builder().addTestDevice("6b0284de")
+//				.addTestDevice("c0808a004e5b92f").build();
+//		adView.loadAd(adRequest);
 
 	}
 
@@ -68,22 +68,22 @@ public class MainActivity extends Activity {
 		startActivity(i);
 	}
 
-	@Override
-	protected void onPause() {
-		adView.pause();
-		super.onPause();
-	}
-
-	@Override
-	protected void onResume() {
-		super.onResume();
-		adView.resume();
-	}
-
-	@Override
-	protected void onDestroy() {
-		adView.destroy();
-		super.onDestroy();
-	}
+//	@Override
+//	protected void onPause() {
+//		adView.pause();
+//		super.onPause();
+//	}
+//
+//	@Override
+//	protected void onResume() {
+//		super.onResume();
+//		adView.resume();
+//	}
+//
+//	@Override
+//	protected void onDestroy() {
+//		adView.destroy();
+//		super.onDestroy();
+//	}
 
 }
