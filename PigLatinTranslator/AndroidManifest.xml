@@ -32,7 +32,8 @@
         </activity>
         <activity
             android:name="appsauceco.piglatin.DisplayMessageActivity"
-            android:label="@string/title_activity_display_message" >
+            android:label="@string/title_activity_display_message"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
