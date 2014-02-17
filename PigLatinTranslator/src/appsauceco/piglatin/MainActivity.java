@@ -57,9 +57,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void appSauce(View v) {
-		String url = "https://play.google.com/store/apps/developer?id=App+Sauce+Co.";
 		Intent i = new Intent(Intent.ACTION_VIEW);
-		i.setData(Uri.parse(url));
+		i.setData(Uri.parse("market://search?q=pub:App+Sauce+Co."));
 		startActivity(i);
 	}
 

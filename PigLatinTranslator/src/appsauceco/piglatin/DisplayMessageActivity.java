@@ -28,9 +28,17 @@ public class DisplayMessageActivity extends Activity {
 
 		Intent intent = getIntent();
 		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+		message = message.toLowerCase();
 
 		TextView textView = new TextView(this);
 		String latin = pigLatin(message);
+		
+		if (latin.length() <= 1) {
+			latin = latin.toUpperCase();
+	    } else {
+	    	latin = latin.substring(0, 1).toUpperCase() + latin.substring(1);
+	    }
+		
 		textView = (TextView) findViewById(R.id.textView1);
 		textView.setText(latin);
 		stampMessage = latin;
@@ -103,7 +111,12 @@ public class DisplayMessageActivity extends Activity {
 	 */
 	private static String pigWord(String word) {
 		int split = firstVowel(word);
-		return word.substring(split) + word.substring(0, split) + "ay";
+		if(split == 0){
+			return word.substring(split) + word.substring(0, split) + "way";
+		}else{
+			return word.substring(split) + word.substring(0, split) + "ay";
+		}
+		
 	}
 
 	/**
@@ -144,9 +157,8 @@ public class DisplayMessageActivity extends Activity {
 	}
 
 	public void appSauce(View v) {
-		String url = "https://play.google.com/store/apps/developer?id=App+Sauce+Co.";
 		Intent i = new Intent(Intent.ACTION_VIEW);
-		i.setData(Uri.parse(url));
+		i.setData(Uri.parse("market://search?q=pub:App+Sauce+Co."));
 		startActivity(i);
 	}
 	
