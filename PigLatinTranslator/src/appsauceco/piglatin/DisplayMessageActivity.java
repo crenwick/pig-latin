@@ -10,14 +10,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
+//
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdSize;
+//import com.google.android.gms.ads.AdView;
 
 @SuppressLint("DefaultLocale")
 public class DisplayMessageActivity extends Activity {
-	private AdView adView;
+//	private AdView adView;
 	String stampMessage;
 
 	@SuppressLint("NewApi")
@@ -44,14 +44,14 @@ public class DisplayMessageActivity extends Activity {
 		stampMessage = latin;
 
 		// adBanner
-		adView = new AdView(this);
-		adView.setAdUnitId("ca-app-pub-7649747947968832/7988359109");
-		adView.setAdSize(AdSize.SMART_BANNER);
-		LinearLayout layout = (LinearLayout) findViewById(R.id.adView);
-		layout.addView(adView);
-		AdRequest adRequest = new AdRequest.Builder().addTestDevice("6b0284de")
-				.addTestDevice("c0808a004e5b92f").build();
-		adView.loadAd(adRequest);
+//		adView = new AdView(this);
+//		adView.setAdUnitId("");
+//		adView.setAdSize(AdSize.SMART_BANNER);
+//		LinearLayout layout = (LinearLayout) findViewById(R.id.adView);
+//		layout.addView(adView);
+//		AdRequest adRequest = new AdRequest.Builder().addTestDevice("")
+//				.addTestDevice("").build();
+//		adView.loadAd(adRequest);
 
 	}
 
@@ -171,19 +171,19 @@ public class DisplayMessageActivity extends Activity {
 
 	@Override
 	protected void onPause() {
-		adView.pause();
+//		adView.pause();
 		super.onPause();
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
-		adView.resume();
+//		adView.resume();
 	}
 
 	@Override
 	protected void onDestroy() {
-		adView.destroy();
+//		adView.destroy();
 		super.onDestroy();
 	}
 

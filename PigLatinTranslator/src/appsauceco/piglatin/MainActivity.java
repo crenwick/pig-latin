@@ -21,12 +21,12 @@ public class MainActivity extends Activity {
 
 		// adBanner
 //		adView = new AdView(this);
-//		adView.setAdUnitId("ca-app-pub-7649747947968832/5314094307");
+//		adView.setAdUnitId("ADIDHERE");
 //		adView.setAdSize(AdSize.SMART_BANNER);
 //		LinearLayout layout = (LinearLayout) findViewById(R.id.adView);
 //		layout.addView(adView);
-//		AdRequest adRequest = new AdRequest.Builder().addTestDevice("6b0284de")
-//				.addTestDevice("c0808a004e5b92f").build();
+//		AdRequest adRequest = new AdRequest.Builder().addTestDevice("")
+//				.addTestDevice("").build();
 //		adView.loadAd(adRequest);
 
 	}
